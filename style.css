@@ -118,8 +118,9 @@ body {
   padding-bottom: 5rem;
   min-height: 100vh;
 }
-.home h2 {
-  font-family: "Charm";
+.home h2,
+.info h2 {
+  font-family: "Charm", cursive;
   font-size: 5rem;
   color: var(--lillac);
   font-weight: bold;
@@ -136,13 +137,13 @@ body {
   color: #666;
 }
 
-.home,
-.couple {
+.home .couple {
   margin-top: 60px;
 }
 
 .couple h3 {
-  font-family: "Charm";
+  font-family: "Charm", cursive;
+  font-weight: bold;
   color: var(--lillac);
   font-size: 2rem;
 }
@@ -150,12 +151,55 @@ body {
   width: 100%;
 }
 
+.home .heart {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(70px);
+}
+
+.home .heart i {
+  margin: auto;
+  color: var(--lillac);
+}
+
+/* Info */
+.info {
+  background-color: var(--bg);
+  color: whitesmoke;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+.info .alamat {
+  font-size: 1.1rem;
+}
+
+.info .description {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
 /* media query */
+
+/* Extra Large */
+@media (max-width: 1200px) {
+  .home .heart {
+    transform: translateX(-50%) translateY(50px);
+  }
+}
 
 /* laptop */
 @media (max-width: 992px) {
   html {
     font-size: 75%;
+  }
+  .home .heart {
+    display: none;
   }
 }
 

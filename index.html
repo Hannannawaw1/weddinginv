@@ -14,9 +14,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Charm&family=Work+Sans:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Charm&family=Work+Sans:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!--my style -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -99,60 +107,66 @@
     <!-- home -->
     <section id="home" class="home">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-8 text-center">
-            <h2>Acara Pernikahan</h2>
-            <h3>
-              Diselenggarakan pada 30 Desember 2023, di Kebumen Jawa Tengah.
-            </h3>
-            <p>
-              Oleh karena itu, dengan segala hormat, Kami bermaksud untuk
-              mengundang Bapak/Ibu, Saudara/i, untuk hadir pada acara pernikahan
-              Kami.
-            </p>
-          </div>
-        </div>
-        <div class="row couple">
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col-8 text-end mt-3">
-                <h3>Slamet Uripe</h3>
-                <p>
-                  Seorang putra yang gigih dalam kebaikan, cekat dalam pekerjaan
-                </p>
-                <p>
-                  Putra dari Bapak Setyo <br />dan <br />
-                  Ibu Ngatemi
-                </p>
-              </div>
-              <div class="col-4 mt-3">
-                <img
-                  src="img/male.jpg"
-                  alt="Slamet"
-                  class="img-responsive rounded-circle"
-                />
-              </div>
+        <div data-aos="slide-up" data-aos-duration="4000">
+          <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+              <h2>Acara Pernikahan</h2>
+              <h3>
+                Diselenggarakan pada 30 Desember 2023, di Kebumen Jawa Tengah.
+              </h3>
+              <p>
+                Oleh karena itu, dengan segala hormat, Kami bermaksud untuk
+                mengundang Bapak/Ibu, Saudara/i, untuk hadir pada acara
+                pernikahan Kami.
+              </p>
             </div>
           </div>
-
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col-4 mt-3">
-                <img
-                  src="img/female.jpg"
-                  alt="Siti"
-                  class="img-responsive rounded-circle"
-                />
+          <div class="row couple">
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-8 text-end mt-3">
+                  <h3>Slamet Uripe</h3>
+                  <!-- <p>
+                    Seorang putra yang gigih dalam kebaikan, cekat dalam
+                    pekerjaan
+                  </p> -->
+                  <p>
+                    Putra dari Bapak Setyo <br />dan <br />
+                    Ibu Ngatemi
+                  </p>
+                </div>
+                <div class="col-4 mt-3">
+                  <img
+                    src="img/male.jpg"
+                    alt="Slamet"
+                    class="img-responsive rounded-circle"
+                  />
+                </div>
               </div>
-              <div class="col-8 mt-3">
-                <h3>Siti Sangadah</h3>
-                <p>
-                  Seorang putri yang gigih dalam kebaikan, cekat dalam pekerjaan
-                </p>
-                <p>
-                  Putri dari Bapak Dharma <br />dan <br />
-                  Ibu Wati
-                </p>
+            </div>
+
+            <span class="heart"><i class="bi bi-heart-fill"></i></span>
+
+            <div class="col-lg-6">
+              <div class="row">
+                <div class="col-4 mt-3">
+                  <img
+                    src="img/female.jpg"
+                    alt="Siti"
+                    class="img-responsive rounded-circle"
+                  />
+                </div>
+                <div class="col-8 mt-3">
+                  <h3>Siti Sangadah</h3>
+                  <!-- <p>
+                    Seorang putri yang gigih dalam kebaikan, cekat dalam
+                    pekerjaan
+                  </p> -->
+                  <p>
+                    Putri dari Bapak Dharma <br />dan <br />
+                    Ibu Wati
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -160,6 +174,49 @@
       </div>
     </section>
 
+    <!-- Info -->
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Informasi Acara</h2>
+            <p class="alamat mt-3">
+              Alamat: Jl. Ringroad Bumiharjo,Kuwayuhan, Kec. Pejagoan, <br />
+              Kabupaten Kebumen, Jawa Tengah
+            </p>
+            <a
+              href="https://maps.app.goo.gl/G6rBV5F49YmnoGVB7"
+              target="_blank"
+              class="btn btn-light btn-sm"
+              >Klik untuk membuka peta</a
+            >
+            <p class="description mt-3">
+              Diharapkan Anda hadir sesuai jadwal,manakala tiba di tujuan tidak
+              ada tanda-tanda pernikahan,bisa jadi Anda salah jadwal atau salah
+              tempat.
+            </p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Akad Nikah</div>
+              <div class="card-body"></div>
+              <div class="card-footer">
+                Saat acara akad diharapkan untuk kondusif menjaga kekhidmatan
+                dan kekhusyu'an prosesi
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
